@@ -4,7 +4,9 @@ from asyncio import sleep
 from datetime import datetime
 from database.users_chats_db import db
 from info import LOG_CHANNEL
-
+# Updated code
+async def my_coroutine():
+    await some_async_function()
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
     web_app.add_routes(routes)
